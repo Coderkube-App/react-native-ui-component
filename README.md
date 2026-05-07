@@ -1,97 +1,120 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ✨ React Native UI Component Library
 
-# Getting Started
+[![React Native](https://img.shields.io/badge/React_Native-0.74+-61DAFB?logo=react&logoColor=black&style=for-the-badge)](https://reactnative.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?logo=typescript&logoColor=white&style=for-the-badge)](https://www.typescriptlang.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-F7DF1E?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A premium, high-fidelity UI component library built with React Native and TypeScript. This project serves as a comprehensive design system, architecturally synchronized with its Flutter counterpart to ensure cross-platform consistency.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## 🚀 Key Features
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- **🎨 Advanced Design System**: Unified color palette, typography, and spacing tokens.
+- **📱 Premium Core Components**: High-performance, customizable UI elements including Buttons, Cards, TextFields, and Typography.
+- **🌗 Dark Mode Support**: Native integration with `useColorScheme` for seamless theme switching.
+- **🏗️ Architectural Parity**: Structured to mirror the Flutter UI library for consistent development patterns.
+- **⚡ Performance Optimized**: Minimal re-renders and smooth animations using native drivers.
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
+## 📂 Project Structure
+
+```bash
+src/
+├── core/               # Core design system and shared components
+│   ├── components/     # Atomic UI components (Button, Card, etc.)
+│   └── theme/          # Theme definitions (Colors, Fonts, Spacing)
+├── modules/            # Feature-based modules
+│   ├── design_system/  # Design system showcase and documentation
+│   ├── main/           # Main application entry points
+│   └── settings/       # User preferences and app settings
+└── routes/             # Navigation configuration and stack definitions
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 💎 Core Components
 
-### Android
+### 🔠 Typography
+A robust typography system with predefined scales (H1-H6, Body, Caption) ensuring consistent text hierarchy.
 
-```sh
-# Using npm
-npm run android
+### 🔘 Buttons
+Highly customizable buttons with support for:
+- Different variants (Filled, Outlined, Ghost)
+- Multiple sizes (Small, Medium, Large)
+- Loading states and icons
 
-# OR using Yarn
+### 📇 Cards
+Elevated surface components with customizable shadow depth, padding, and interactive states.
+
+### 📝 TextField
+Premium input fields with built-in validation styles, floating labels, and focus states.
+
+---
+
+## 🛠️ Getting Started
+
+### Prerequisites
+- Node.js > 18
+- Yarn or NPM
+- React Native Environment Setup ([Official Guide](https://reactnative.dev/docs/set-up-your-environment))
+
+### Installation
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd react-native-ui-component
+   ```
+
+2. **Install dependencies**
+   ```bash
+   yarn install
+   # or
+   npm install
+   ```
+
+3. **Install iOS Pods** (macOS only)
+   ```bash
+   cd ios && pod install && cd ..
+   ```
+
+### Running the App
+
+#### Android
+```bash
 yarn android
 ```
 
-### iOS
-
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
+#### iOS
+```bash
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## 🎨 Design System
 
-## Step 3: Modify your app
+Our design system is built on a foundation of clarity and modern aesthetics.
 
-Now that you have successfully run the app, let's make changes!
+- **Primary Color**: `#6200EE` (Light) | `#BB86FC` (Dark)
+- **Secondary Color**: `#03DAC6`
+- **Surface**: High-contrast surfaces for readability.
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+For more details, check out the `src/core/theme` directory.
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+---
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+## 🤝 Contribution
 
-## Congratulations! :tada:
+Contributions are welcome! Please feel free to submit a Pull Request or open an issue for any feature requests or bug reports.
 
-You've successfully run and modified your React Native App. :partying_face:
+---
 
-### Now what?
+## 📄 License
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Troubleshooting
+---
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<p align="center">Built with ❤️ for the React Native Community</p>
